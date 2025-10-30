@@ -50,7 +50,7 @@
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                        <button class="btn btn-outline-danger"  id="logoutbtn" type="submit">Logout</button>
+                        <button class="btn btn-outline-danger"  id="logoutbtn" >Logout</button>
                     </form>
                 </div>
             </div>
@@ -157,7 +157,7 @@
     </div>
     <!-- Table Contents Ends -->
     <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-    <script src="./assets/js/logoutprompt.js"></script>
+    <script src="./assets/js/logoutprompts.js"></script>
 </body>
 
 </html>
