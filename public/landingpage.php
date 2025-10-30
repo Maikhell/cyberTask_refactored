@@ -23,20 +23,82 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="">Task</a>
+                            <a class="nav-link active" href="">Get Started</a>
                         </li>
 
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-success" type="submit">Register</button>
+                        <button class="btn btn-outline-success " type="submit">Login</button>
                     </form>
                 </div>
             </div>
         </nav>
         <!-- Navbar Contents Ends -->
-        <div class="cotainer-fluid">
-        <h1>Hello</h1>
+        <!-- Main Contents Starts -->
+        <div class="cotainer-fluid" id="first-body">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="robot-container">
+                        <img class="robot-png" src="./assets/images/robot-img.jpg" alt="">
+                    </div>
+                    <div class="introduction">
+                        <h1>CyberTask</h1>
+                        <h3>The easiest way to get things done.</h3>
+                        <p>List, Solve, and Archive. This is your all-in-one productivity hub where you can list your
+                            tasks and get instant, AI-powered help to finish them, then file them away for good.</p>
+                    </div>
+                </div>
+
+                <div class="col-sm-6" id="outer-form-container">
+                    <div class="container" id="inner-form">
+                        <h2 class="signup">Sign Up For Free</h2>
+                        <div class="container-fluid" id="log-in-form">
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="email">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="inputPassword"
+                                        placeholder="password">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <form class="inner-container    ">
+                                        <button class="btn btn-outline-success" id="form-button"
+                                            type="submit">Register</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- Main Contents Starts -->
+        <!-- Modal Contents Starts -->
+        <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body text goes here.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Contents Ends -->
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+        <script src="./assets/js/openmodal.js"></script>
 </body>
 
 </html>
