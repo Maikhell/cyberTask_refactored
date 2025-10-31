@@ -37,22 +37,32 @@
         <!-- Main Contents Starts -->
         <div class="cotainer-fluid" id="first-body">
             <div class="row">
-                <div class="col-sm-6">
-                    <div class="robot-container">
-                        <img class="robot-png" src="./assets/images/robot-img.jpg" alt="">
-                    </div>
+                <div class="col-sm-7" id="outer-form-container-left">
                     <div class="introduction">
-                        <h1>CyberTask</h1>
+                        <h1 class="main-title">CyberTask</h1>
                         <h3>The easiest way to get things done.</h3>
                         <p>List, Solve, and Archive. This is your all-in-one productivity hub where you can list your
                             tasks and get instant, AI-powered help to finish them, then file them away for good.</p>
+                        <div class="robot-container">
+                            <img class="robot-png" src="./assets/images/robot-img.jpg" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-sm-6" id="outer-form-container">
+                </div>
+                <div class="col-sm-4" id="outer-form-container">
                     <div class="container" id="inner-form">
                         <h2 class="signup">Sign Up For Free</h2>
                         <div class="container-fluid" id="log-in-form">
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputGmail" placeholder="Gmail Login">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <p class="Or-divider"><span>Or</span></p>
+                                </div>
+                            </div>
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
                                     <input type="text" class="form-control" id="inputEmail" placeholder="email">
@@ -64,11 +74,20 @@
                                         placeholder="password">
                                 </div>
                             </div>
+
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
-                                    <form class="inner-container    ">
-                                        <button class="btn btn-outline-success" id="form-button"
-                                            type="submit">Register</button>
+                                    <p class="terms">By clicking Create account, I agree to the <a class="terms-link"
+                                            href="">Terms of Service</a> and
+                                        <a class="terms-link" href="">Privacy Policy</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <form class="inner-container">
+                                        <button class="btn btn-outline-success" id="form-button" type="submit">Create
+                                            Account</button>
                                     </form>
                                 </div>
                             </div>

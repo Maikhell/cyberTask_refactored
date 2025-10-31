@@ -4,9 +4,16 @@
 
 #outer-form-container {
     align-content: center;
+
 }
 
-#inner-form {}
+#outer-form-container-left {
+    align-content: center;
+}
+
+#inner-form {
+    margin-bottom: 10px;
+}
 
 #log-in-form {
     padding: 20px;
@@ -19,6 +26,8 @@
 }
 
 .signup {
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #ffffff;
 }
 
@@ -33,8 +42,9 @@
 }
 
 .robot-container {
-    margin: auto;
-    width: 50%;
+    position: absolute;
+    /* brute forced design, need to fix every breakpoint */
+    width: 30%;
 }
 
 .introduction {
@@ -43,4 +53,88 @@
     color: #ffffff;
     margin: auto;
     width: 80%;
+
+
+}
+
+.main-title {}
+
+.Or-divider {
+    width: 100%;
+    text-align: center;
+    color: #969696;
+    border-bottom: 1px solid #969696;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.Or-divider span {
+    background-color: #f8f8f8;
+    padding: 0 10px;
+}
+
+.terms {
+    color: #969696;
+}
+
+.terms-link {
+    color: #535353;
+}
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+/*MEDIA SCREEN BREAKPOINTS FOR FLEXIBILITY*/
+/* 1. Small Tablets/Larger Phones (e.g., iPhone XR/11 and up in portrait) */
+@media screen and (min-width: 340px) {
+    .robot-container {
+        width: 60%;
+        margin: auto;
+        position: static;
+    }
+
+    .introduction {
+        text-align: left;
+        padding: 10px;
+        color: #ffffff;
+        margin: auto;
+        width: 90%;
+
+
+    }
+}
+
+@media screen and (min-width: 415px) {
+    .robot-container {
+        width: 60%;
+        margin: auto;
+        position: static;
+    }
+}
+
+/* 2. Standard Tablets (e.g., iPad Mini/Air and up) */
+@media screen and (min-width: 768px) {
+    .robot-container {
+        width: 30%;
+        margin: auto;
+        position: absolute;
+    }
+}
+
+/* 3. Desktop/Large Tablets (e.g., iPad Pro/Desktop Monitors) */
+@media screen and (min-width: 1025px) {
+    .robot-container {
+        width: 30%;
+        margin: auto;
+        position: absolute;
+    }
+}
+
+/*Custom Fonts Import*/
+@font-face {
+    font-family: 'CustomFont';
+    src: url('path/to/yourfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
 }
