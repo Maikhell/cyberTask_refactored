@@ -14,7 +14,7 @@
     <div class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Cyber Task</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,12 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="">Get Started</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="">Contact</a>
+                        </li>
                     </ul>
                     <form class="d-flex">
                         <button class="btn btn-outline-success " type="submit">Login</button>
@@ -39,7 +44,14 @@
             <div class="row">
                 <div class="col-sm-7" id="outer-form-container-left">
                     <div class="introduction">
-                        <h1 class="main-title">CyberTask</h1>
+                        <div class="row" id ="main-title-container">
+                            <div class="col-sm-6">
+                                <h1 class="main-title-cyber">Cyber</h1>
+                            </div>
+                            <div class="col-sm-6" id = "task-title">
+                                <h1 class="main-title-task"> Task</h1>
+                            </div>
+                        </div>
                         <h3>The easiest way to get things done.</h3>
                         <p>List, Solve, and Archive. This is your all-in-one productivity hub where you can list your
                             tasks and get instant, AI-powered help to finish them, then file them away for good.</p>
@@ -51,7 +63,7 @@
                 </div>
                 <div class="col-sm-4" id="outer-form-container">
                     <div class="container" id="inner-form">
-                        <h2 class="signup">Sign Up For Free</h2>
+                        <h3 class="signup">Sign Up For Free</h3>
                         <div class="container-fluid" id="log-in-form">
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
