@@ -3,12 +3,29 @@
     font-size: 20px;
 }
 
-.nav-container:hover {}
-
-.nav-link span:hover {
-    /* border-bottom: 2px solid #3bb278; */
-    transition: border-width 0.3s ease-in-out;
+.nav-link span {
+    position: relative;
+    display: inline-block;
 }
+
+.nav-link span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #11c26d;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link span:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
 
 #first-body {
     background-color: #3bb278;
@@ -88,6 +105,21 @@
 
 #main-title-container {
     width: 100%;
+}
+
+.catchy-line h3 {
+    overflow: hidden;
+    border-right: .15em solid rgb(60, 192, 240);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0em;
+    animation:
+    typing 3.5s steps(40, end),
+    blink-caret .65s step-end infinite;
+}
+
+.catchy-line-container {
+    width: 75%;
 }
 
 .Or-divider {
@@ -212,4 +244,15 @@
     font-family: 'CustomFont';
     src: url('../fonts/CyberwayRiders-lg97d.ttf') format('truetype');
 
+}
+
+/*Keyframes-Animations*/
+ @keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(60, 192, 240);    }
 }

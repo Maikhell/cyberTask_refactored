@@ -39,7 +39,7 @@
                         </div>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-success" data-bs-toggle="modal"
+                        <button type="button"id="openModal"class="btn btn-outline-success" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Login</button>
                     </form>
                 </div>
@@ -59,7 +59,11 @@
                                 <h1 class="main-title-task"> Task</h1>
                             </div>
                         </div>
-                        <h3>The easiest way to get things done.</h3>
+                        <div class="catchy-line-container">
+                            <div class="catchy-line">
+                                <h3>The easiest way to get things done.</h3>
+                            </div>
+                        </div>
                         <p>List, Solve, and Archive. This is your all-in-one productivity hub where you can list your
                             tasks and get instant, AI-powered help to finish them, then file them away for good.</p>
                         <div class="robot-container">
@@ -154,7 +158,7 @@
                 </div>
                 <!-- Modal Contents Ends -->
                 <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-                <script src="./assets/js/openmodal.js"></script>
+                
 </body>
 
 </html>
