@@ -3,7 +3,12 @@
     font-size: 20px;
 }
 
+.nav-container:hover {}
 
+.nav-link span:hover {
+    /* border-bottom: 2px solid #3bb278; */
+    transition: border-width 0.3s ease-in-out;
+}
 
 #first-body {
     background-color: #3bb278;
@@ -32,6 +37,11 @@
 
 #form-button {
     width: 100%;
+}
+
+.form-control:focus {
+    border-color: #3bb278;
+    box-shadow: 0 0 0 .25rem rgb(161, 216, 190);
 }
 
 .signup {
@@ -124,7 +134,7 @@
 
     #main-title-container {
         width: 100%;
-        
+
     }
 
     #task-title {
@@ -137,9 +147,10 @@
         font-family: 'CustomFont';
         font-size: 100px;
         text-align: right;
-        
+
     }
-     .main-title-cyber {
+
+    .main-title-cyber {
         font-family: 'CustomFont';
         font-size: 100px;
         height: 80px;
@@ -161,7 +172,7 @@
     .main-title-cyber {
         font-family: 'CustomFont';
         font-size: 80px;
-        
+
     }
 
     .main-title-task {
@@ -191,7 +202,7 @@
     }
 
     #main-title-container {
-        width: 70%;
+        width: 68%;
 
     }
 }

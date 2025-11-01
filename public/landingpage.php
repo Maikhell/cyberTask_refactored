@@ -12,9 +12,9 @@
 <body>
     <!-- Navbar Contents Starts -->
     <div class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Cyber Task</a>
+                <a class="navbar-brand active" href="#">Cyber Task</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -22,18 +22,25 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="">Get Started</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="">Contact</a>
-                        </li>
+                        <div class="nav-container">
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><span>Get Started</span></a>
+                            </li>
+                        </div>
+                        <div class="nav-container">
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><span>About</span></a>
+                            </li>
+                        </div>
+                        <div class="nav-container">
+                            <li class="nav-item">
+                                <a class="nav-link" href=""><span>Contact</span></a>
+                            </li>
+                        </div>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-success " type="submit">Login</button>
+                        <button class="btn btn-outline-success" data-bs-toggle="modal"
+                            data-bs-target="#loginModal">Login</button>
                     </form>
                 </div>
             </div>
@@ -44,11 +51,11 @@
             <div class="row">
                 <div class="col-sm-7" id="outer-form-container-left">
                     <div class="introduction">
-                        <div class="row" id ="main-title-container">
+                        <div class="row" id="main-title-container">
                             <div class="col-sm-6">
                                 <h1 class="main-title-cyber">Cyber</h1>
                             </div>
-                            <div class="col-sm-6" id = "task-title">
+                            <div class="col-sm-6" id="task-title">
                                 <h1 class="main-title-task"> Task</h1>
                             </div>
                         </div>
@@ -77,13 +84,18 @@
                             </div>
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
-                                    <input type="text" class="form-control" id="inputEmail" placeholder="email">
+                                    <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="Email">
                                 </div>
                             </div>
                             <div class="mb-3 row">
                                 <div class="col-sm-12">
                                     <input type="password" class="form-control" id="inputPassword"
-                                        placeholder="password">
+                                        placeholder="Password">
                                 </div>
                             </div>
 
@@ -110,26 +122,39 @@
         </div>
         <!-- Main Contents Starts -->
         <!-- Modal Contents Starts -->
-        <div class="modal" tabindex="-1">
+        <div class="modal fade" tabindex="-1" id="loginModal">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title">Modal title</h5>
+                        <h5 class="modal-title">Login</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Modal body text goes here.</p>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <div class="container" id="inner-modal-form">
+                            <div class="container-fluid" id="log-in-modal-form">
+                                <div class="mb-3 row">
+                                    <div class="col-sm-12">
+                                        <input type="text" class="form-control" id="inputUsernameLogin"
+                                            placeholder="Username">
+                                    </div>
+                                </div>
+                                <div class="mb-3 row">
+                                    <div class="col-sm-12">
+                                        <input type="password" class="form-control" id="inputPasswordLogin"
+                                            placeholder="Password">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-success">Login</button>
+                                <!-- Needed Submit Functionality Later-->
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- Modal Contents Ends -->
-        <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-        <script src="./assets/js/openmodal.js"></script>
+                <!-- Modal Contents Ends -->
+                <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+                <script src="./assets/js/openmodal.js"></script>
 </body>
 
 </html>
