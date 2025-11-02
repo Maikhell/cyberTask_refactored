@@ -114,8 +114,8 @@
     margin: 0 auto;
     letter-spacing: 0em;
     animation:
-    typing 3.5s steps(40, end),
-    blink-caret .65s step-end infinite;
+        typing 3.5s steps(40, end),
+        blink-caret .65s step-end infinite;
 }
 
 .catchy-line-container {
@@ -146,6 +146,18 @@
 
 .row {
     --bs-gutter-x: 0;
+}
+
+#get-started-section {
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mid-right-offset {
+    position: relative;
+    left: 60px;
+    font-family: 'CustomFont';
+    font-size: 70px;
 }
 
 /*MEDIA SCREEN BREAKPOINTS FOR FLEXIBILITY*/
@@ -187,6 +199,12 @@
         font-size: 100px;
         height: 80px;
     }
+
+    .mid-right-offset {
+        position: static;
+        text-align: center;
+        left: 60px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -211,6 +229,13 @@
         font-family: 'CustomFont';
         font-size: 80px;
     }
+
+    .mid-right-offset {
+        position: relative;
+        left: 15px;
+        font-family: 'CustomFont';
+        font-size: 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -223,6 +248,13 @@
     #main-title-container {
         width: 90%;
 
+    }
+
+    .mid-right-offset {
+        position: relative;
+        left: 10px;
+        font-family: 'CustomFont';
+        font-size: 70px;
     }
 }
 
@@ -237,6 +269,13 @@
         width: 68%;
 
     }
+
+    .mid-right-offset {
+        position: relative;
+        left: 60px;
+        font-family: 'CustomFont';
+        font-size: 70px;
+    }
 }
 
 /*Custom Fonts Import*/
@@ -247,12 +286,24 @@
 }
 
 /*Keyframes-Animations*/
- @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: rgb(60, 192, 240);    }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(60, 192, 240);
+    }
 }

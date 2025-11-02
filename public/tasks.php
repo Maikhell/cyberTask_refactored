@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Tasks</title>
-    <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/task.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
     <div class="">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand active" href="#">Cyber <span>Task</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +50,7 @@
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
-                        <button class="btn btn-outline-danger"  id="logoutbtn" >Logout</button>
+                        <button class="btn btn-outline-danger" id="logoutbtn">Logout</button>
                     </form>
                 </div>
             </div>
@@ -58,7 +58,7 @@
         <!-- Navbar Contents Ends -->
         <!-- Table Contents Starts -->
         <div class="table-responsive">
-            <table class="table table-sm">
+            <table class="table table-striped">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -75,7 +75,7 @@
                         <td>Make Notes and Reviewer</td>
                         <td>This is a really important task that requires precision and real thinking skills.</td>
                         <td>08-28-2025</td>
-                        <td>Incomplete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>Urgent</td>
                     </tr>
                     <tr>
@@ -83,7 +83,7 @@
                         <td>Finish Project Proposal</td>
                         <td>Prepare the draft and finalize all sections for supervisor review.</td>
                         <td>09-02-2025</td>
-                        <td>Complete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>High</td>
                     </tr>
                     <tr>
@@ -91,7 +91,7 @@
                         <td>Design System Wireframes</td>
                         <td>Create UI mockups and ensure the layout aligns with the client’s requirements.</td>
                         <td>09-10-2025</td>
-                        <td>Incomplete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>Medium</td>
                     </tr>
                     <tr>
@@ -99,7 +99,7 @@
                         <td>Update Database Schema</td>
                         <td>Add new columns for section and year to improve data structure.</td>
                         <td>09-15-2025</td>
-                        <td>In Progress</td>
+                        <td class="table-warning">In progress</td>
                         <td>High</td>
                     </tr>
                     <tr>
@@ -107,7 +107,7 @@
                         <td>Test User Login Feature</td>
                         <td>Perform manual and automated testing on the login module for errors.</td>
                         <td>09-18-2025</td>
-                        <td>Incomplete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>Low</td>
                     </tr>
                     <tr>
@@ -115,7 +115,7 @@
                         <td>Prepare Presentation Slides</td>
                         <td>Create slides summarizing project progress and upcoming milestones.</td>
                         <td>09-25-2025</td>
-                        <td>Complete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>Medium</td>
                     </tr>
                     <tr>
@@ -123,7 +123,7 @@
                         <td>Optimize Query Performance</td>
                         <td>Analyze slow database queries and implement indexing strategies.</td>
                         <td>10-02-2025</td>
-                        <td>In Progress</td>
+                        <td class="table-warning">In Progress</td>
                         <td>High</td>
                     </tr>
                     <tr>
@@ -131,7 +131,7 @@
                         <td>Write API Documentation</td>
                         <td>Document all endpoints with request and response examples.</td>
                         <td>10-05-2025</td>
-                        <td>Incomplete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>Medium</td>
                     </tr>
                     <tr>
@@ -139,7 +139,7 @@
                         <td>Conduct Code Review</td>
                         <td>Review recent commits and suggest improvements to maintain code quality.</td>
                         <td>10-10-2025</td>
-                        <td>Complete</td>
+                        <td class="table-warning">In progress</td>
                         <td>Low</td>
                     </tr>
                     <tr>
@@ -147,16 +147,15 @@
                         <td>Deploy to Staging Server</td>
                         <td>Push latest updates to the staging environment for final testing.</td>
                         <td>10-15-2025</td>
-                        <td>Incomplete</td>
+                        <td class="table-danger">Incomplete</td>
                         <td>Urgent</td>
                     </tr>
                 </tbody>
-
             </table>
         </div>
     </div>
     <!-- Table Contents Ends -->
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
     <script src="./assets/js/logoutprompts.js"></script>
 </body>
 

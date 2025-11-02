@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cyber Task</title>
-    <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -83,7 +83,7 @@
         </tbody>
     </table>
     <!-- Table Contents Ends -->
-    <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

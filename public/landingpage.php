@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CyberTask</title>
-    <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/landingpage.css">
 </head>
 
@@ -39,7 +39,7 @@
                         </div>
                     </ul>
                     <form class="d-flex">
-                        <button type="button"id="openModal"class="btn btn-outline-success" data-bs-toggle="modal"
+                        <button type="button" id="openModal" class="btn btn-outline-success" data-bs-toggle="modal"
                             data-bs-target="#loginModal">Login</button>
                     </form>
                 </div>
@@ -125,40 +125,52 @@
             </div>
         </div>
         <!-- Main Contents Starts -->
-        <!-- Modal Contents Starts -->
-        <div class="modal fade" tabindex="-1" id="loginModal">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="container" id="inner-modal-form">
-                            <div class="container-fluid" id="log-in-modal-form">
-                                <div class="mb-3 row">
-                                    <div class="col-sm-12">
-                                        <input type="text" class="form-control" id="inputUsernameLogin"
-                                            placeholder="Username">
-                                    </div>
-                                </div>
-                                <div class="mb-3 row">
-                                    <div class="col-sm-12">
-                                        <input type="password" class="form-control" id="inputPasswordLogin"
-                                            placeholder="Password">
-                                    </div>
+        <!-- Get Started Section Starts -->
+        <div class="container-fluid" id = "get-started-section">
+            <div class="row ">
+                <div class="col-sm-5 ms-auto offset-sm-4">
+                    <h3 class="mid-right-offset">Get Started</h3>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+    <!-- Get Started Section Ends -->
+    <!-- Modal Contents Starts -->
+    <div class="modal fade" tabindex="-1" id="loginModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container" id="inner-modal-form">
+                        <div class="container-fluid" id="log-in-modal-form">
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="inputUsernameLogin"
+                                        placeholder="Username">
                                 </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-success">Login</button>
-                                <!-- Needed Submit Functionality Later-->
+                            <div class="mb-3 row">
+                                <div class="col-sm-12">
+                                    <input type="password" class="form-control" id="inputPasswordLogin"
+                                        placeholder="Password">
+                                </div>
                             </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="loginbtn" type="button" class="btn btn-success">Login</button>
+                            <!-- Needed Submit Functionality Later-->
                         </div>
                     </div>
                 </div>
-                <!-- Modal Contents Ends -->
-                <script src="./bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-                
+            </div>
+            <!-- Modal Contents Ends -->
+            <script src="./bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+            <script src="./assets/js/login.js"></script>
+
 </body>
 
 </html>
