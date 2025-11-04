@@ -160,6 +160,11 @@
     font-size: 70px;
 }
 
+.mid-right-offset-nm {
+    position: relative;
+    left: 60px;
+}
+
 /*MEDIA SCREEN BREAKPOINTS FOR FLEXIBILITY*/
 @media screen and (max-width: 540px) {
     .robot-container {

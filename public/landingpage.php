@@ -126,13 +126,22 @@
         </div>
         <!-- Main Contents Starts -->
         <!-- Get Started Section Starts -->
-        <div class="container-fluid" id = "get-started-section">
+        <div class="container-fluid" id="get-started-section">
             <div class="row ">
                 <div class="col-sm-5 ms-auto offset-sm-4">
                     <h3 class="mid-right-offset">Get Started</h3>
                 </div>
             </div>
-         
+            <div class="row">
+                <div class="col-sm-5 ms-auto offset-sm-4">
+                    <h4 class="mid-right-offset-nm"> Get the Fastest Route to Done: Optimized Task Flow, Zero Effort</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5 ms-auto offset-sm-4">
+                    <span class="mid-right-offset-nm">Stop Managing Tasks. Start Completing Them. Instantly.</span>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Get Started Section Ends -->
